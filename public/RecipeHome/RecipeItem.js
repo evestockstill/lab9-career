@@ -10,8 +10,8 @@ class RecipeItem extends Component {
     return `
         <li class="recipe-item">
     <div>
-    <a href="http://${recipe.id}" target="_blank"></a>
-        <img src="${image}" alt="${recipe.id}>
+    <a href="http://${recipe.name}" target="_blank"></a>
+        <img src="${image}" alt="${recipe.name}>
             <div class="recipe-cards">
                 <h2 class="recipe-name">${recipe.name}</h2>
                 </div>

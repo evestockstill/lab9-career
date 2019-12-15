@@ -1,0 +1,16 @@
+.footer .box {
+  
+ padding: 2em;
+  color: hsla(0, 0%, 17%, 1);
+ background: hsla(58, 100%, 53%, 1)
+}
+.footer .box:first-child {
+     color: hsla(0, 0%, 17%, 1);
+ background: hsla(58, 100%, 53%, 1)
+}
+.main-footer {
+ padding: 2em;
+ background:black;
+ color: white;
+ text-align: center;
+}

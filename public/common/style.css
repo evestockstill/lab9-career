@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+ 
+  background: hsla(214, 100%, 33%, 1);
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+h2,
+h6 {
+ 
+  margin: 0;
+  padding: 0.5em 0;
+}
+h2 {
+  text-transform: uppercase;
+}
+h6 {
+ 
+  font-size: 1.5em;
+  font-weight: 600;
+}
+p {
+  margin: 0;
+  padding: 0.5em 0;
+  font-size: 1em;
+  
+}
+select {
+  height: 100px;
+  width: 9em;
+  font-family: 'Patrick Hand SC', cursive;
+  color: white;
+  text-shadow: 1px 1px 1px hsla(19, 100%, 35%, 1);
+  font-size: 1.5em;
+  appearance: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../assets/herodessert.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  height: 1.8rem;
+  border-radius: 0.5em;
+  color: white;
+  border: 2px solid black;
+  font-family: 'Patrick Hand SC', cursive;
+  font-size: 1rem;
+
+  text-shadow: 0px 0px 1px black;
+  background: hsla(214, 100%, 33%, 1);
+}
+fieldset {
+  background: hsla(19, 100%, 35%, 1);
+  border: 15px solid hsla(19, 100%, 35%, 1);
+}
+input,
+legend {
+  height: 1.2rem;
+  font-size: 1em;
+  margin: 0.5em;
+  text-align: center;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 0.3em;
+  color: white;
+  text-shadow: 0px 0px 1px hsla(19, 100%, 35%, 1);
+  background: hsla(214, 100%, 33%, 1);
+}
+.section-b ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+input[type='radio'] {
+  display: none;
+}

@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-const URL = 'https://recipe-alchemy.herokuapp.com/api/v1/recipes';
+const URL = 'https://recipe-alchemy.herokuapp.com/api/v1/recipes?';
 
 export async function getRecipes() {
   let recipeQueryString = window.location.hash.slice(1);

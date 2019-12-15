@@ -1,5 +1,5 @@
 /* eslint-disable no-undef */
-import RecipeApp from './RecipeApp';
+import RecipeApp from './RecipeApp.js';
 
 const recipeApp = new RecipeApp();
 const element = recipeApp.renderDOM();
