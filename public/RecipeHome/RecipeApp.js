@@ -6,7 +6,7 @@ import Footer from '../common/footer.js';
 import Paging from './Paging.js';
 import SearchOptions from './SearchOptions.js';
 import RecipeList from './RecipeList.js';
-import { getRecipes } from '../services/recipe-api';
+import { getRecipes } from '../services/recipe-api.js';
 
 class RecipeApp extends Component {
 
@@ -29,6 +29,7 @@ class RecipeApp extends Component {
     listSection.appendChild(footer.renderDOM());
     const loadRecipes = async() => {
       const response = await getRecipes();
+      console.log(response);
       const recipes = response.results;
       const totalResults = response.count;
       recipeList.update({ recipes: recipes });

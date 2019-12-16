@@ -1,4 +1,4 @@
-import htmlToDOM from './util/htmlToDOM.js';
+import htmlToDOM from '../utils/htmlToDOM.js';
 class Component {
   constructor(props) {
     this.props = props || {};

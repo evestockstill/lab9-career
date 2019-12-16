@@ -1,8 +1,7 @@
 require('dotenv').config();
 require('./lib/utils/connect')();
-
 require('morgan');
-require('cors');
+
 
 const app = require('./public/app');
 
