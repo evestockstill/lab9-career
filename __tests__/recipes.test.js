@@ -4,8 +4,8 @@ const request = require('supertest');
 const app = require('../lib/app');
 const connect = require('../lib/utils/connect');
 const mongoose = require('mongoose');
-const Recipe = require('../models/Recipe');
-const Event = require('../models/Event');
+const Recipe = require('../lib/models/Recipe');
+const Event = require('../lib/models/Event');
 
 describe('recipe routes', () => {
   beforeAll(() => {
@@ -39,12 +39,6 @@ describe('recipe routes', () => {
         notes: 'It was good',
         rating: 5
       }
-      // {
-      //   recipeId: recipe._id,
-      //   dateOfEvent: new Date(),
-      //   notes: 'not great',
-      //   rating: 1
-      // }
     ]);
   });
 
@@ -80,6 +74,7 @@ describe('recipe routes', () => {
             'put dough on cookie sheet',
             'bake for 10 minutes'
           ],
+          "success": true,
           __v: 0
         });
       });
@@ -126,7 +121,7 @@ describe('recipe routes', () => {
       });
   });
 
-  it('updates a recipe by id', async() => {
+  it('updates with patch by id', async() => {
     return request(app)
       .patch(`/api/v1/recipes/${recipe._id}`)
       .send({ name: 'good cookies' })

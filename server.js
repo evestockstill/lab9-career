@@ -1,10 +1,9 @@
 require('dotenv').config();
-require('./utils/connect')();
+require('./lib/utils/connect')();
 require('colors');
-require('morgan');
-require('cors');
 
-const app = require('./app');
+
+const app = require('./lib/app');
 
 app.get('/', (req, res) => {
   res.send('hello from recipe');
