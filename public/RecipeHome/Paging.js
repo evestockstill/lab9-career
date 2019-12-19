@@ -59,7 +59,7 @@ class Paging extends Component {
     }
     if(totalResults === 0) {
       return /*html*/`
-                <section class="paging">There are no recipes with that criteria!</section>
+                <section class="paging"></section>
             `;
     }
 
