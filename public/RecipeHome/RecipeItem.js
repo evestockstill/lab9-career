@@ -5,7 +5,7 @@ class RecipeItem extends Component {
     const recipe = this.props.recipe;
     let image = recipe.url_image;
     if(image === 'N/A') {
-      image = '.public/assets/herodessert.jpeg';
+      image = '';
     }
     return `
         <li class="recipe-item">
