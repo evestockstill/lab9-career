@@ -41,11 +41,9 @@ describe('recipe routes', () => {
       }
     ]);
   });
-
   afterAll(() => {
     return mongoose.connection.close();
   });
-
   it('creates a recipe', () => {
     return request(app)
       .post('/api/v1/recipes')
@@ -148,7 +146,7 @@ describe('recipe routes', () => {
       .delete(`/api/v1/recipes/${recipe._id}`)
       .then(res => {
         expect(res.body).toEqual({
-          _id: expect.any(String),
+          _id: recipe.id,
           name: 'cookies',
           ingredients: [
             { _id: expect.any(String), name: 'flour', amount: 1, measurement: 'cup' }
