@@ -31,7 +31,7 @@ class RecipeApp extends Component {
       const response = await getRecipes();
       console.log(response.results, 'results');
       console.log(response, 'response');
-      const recipes = response.results;
+      const recipes = response;
       const totalResults = response.count;
       recipeList.update({ recipes: recipes });
       paging.update({ totalResults: totalResults });
