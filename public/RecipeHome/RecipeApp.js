@@ -28,21 +28,17 @@ class RecipeApp extends Component {
     const footer = new Footer();
     listSection.appendChild(footer.renderDOM());
     const loadRecipes = async() => {
-      const response = await getRecipes();
-      console.log(response.results, 'results');
-      console.log(response, 'response');
-      const recipes = response;
-      const totalResults = response.count;
+      const recipe = await getRecipes();
+      console.log(recipe, 'recipe in Recipeapp');
       recipeList.update({ recipes: recipes });
-      paging.update({ totalResults: totalResults });
+      // const totalResults = response.length();
+      // paging.update({ totalResults: totalResults });
     };
     loadRecipes();
-
     window.addEventListener('hashchange', () => {
       loadRecipes();
     });
   }
-
   renderHTML() {
     return /*html*/`
                 <main class ="main">
