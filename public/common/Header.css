@@ -1,0 +1,25 @@
+.header {
+ display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem; 
+ min-height: 500px;
+ text-shadow: 1px 1px 1px black;
+ color: hsla(305, 100%, 69%, 1);
+  border: 2px solid black;
+ background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)), url('../assets/cups.jpeg');
+ background-position: center ;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  transition: all 1.5s ease;
+}
+a:hover{
+  color: black;
+  text-shadow: 2px 2px 2px white;
+}

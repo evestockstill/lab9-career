@@ -1,7 +1,7 @@
 require('dotenv').config();
 
 const request = require('supertest');
-const app = require('../lib/app');
+const app = require('../public/app');
 const connect = require('../lib/utils/connect');
 const mongoose = require('mongoose');
 const Recipe = require('../lib/models/Recipe');
@@ -38,13 +38,13 @@ describe('recipe routes', () => {
         dateOfEvent: new Date(),
         notes: 'It was good',
         rating: 5
-      },
-      {
-        recipeId: recipe._id,
-        dateOfEvent: new Date(),
-        notes: 'not great',
-        rating: 1
       }
+      // {
+      //   recipeId: recipe._id,
+      //   dateOfEvent: new Date(),
+      //   notes: 'not great',
+      //   rating: 1
+      // }
     ]);
   });
 
