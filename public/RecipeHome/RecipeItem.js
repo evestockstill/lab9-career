@@ -3,7 +3,7 @@ import Component from '../Component/Component.js';
 class RecipeItem extends Component {
   renderHTML() {
     const recipe = this.props.recipe;
-    let image = recipe.url_image;
+    let image = '';
     if(image === 'N/A') {
       image = '';
     }
