@@ -2,15 +2,15 @@
   
  padding: 2em;
   color: hsla(0, 0%, 17%, 1);
- background: hsl(17, 89%, 32%)
+ background:hsla(305, 100%, 79%, 1)
 }
 .footer .box:first-child {
      color: hsla(0, 0%, 17%, 1);
- background:hsl(17, 89%, 32%)
+ background:hsla(305, 100%, 79%, 1)
 }
 .main-footer {
  padding: 2em;
- background:rgb(41, 40, 40);
+ background:hsla(193, 100%, 65%, 1);
  color: white;
  text-align: center;
 }

@@ -4,7 +4,6 @@ class RecipeList extends Component {
 
   onRender(element) {
     const recipes = this.props.recipes;
-    console.log(recipes);
 
     recipes.forEach(recipe => {
       const props = { recipe };

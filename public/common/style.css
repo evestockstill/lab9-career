@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  font-family: font-family: 'Concert One', cursive;
- 
+  font-family: 'Concert One', cursive;
   background: rgb(213, 104, 9);
   font-size: 1.1rem;
   line-height: 1.5;
@@ -40,7 +39,7 @@ select {
   font-size: 1.5em;
   appearance: none;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url('../assets/cupcake.jpeg');
+    url('../assets/cups.jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -58,8 +57,8 @@ button {
   background: hsla(305, 100%, 88%, 1);
 }
 fieldset {
-  background: hsla(19, 100%, 35%, 1);
-  border: 15px solid hsla(19, 100%, 35%, 1);
+  background: hsla(16, 100%, 74%, 1);
+  border: 15px solid hsla(16, 100%, 74%, 1) ;
 }
 input,
 legend {

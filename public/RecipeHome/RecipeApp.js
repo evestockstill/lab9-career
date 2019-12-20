@@ -29,7 +29,6 @@ class RecipeApp extends Component {
     listSection.appendChild(footer.renderDOM());
     const loadRecipes = async() => {
       const response = await getRecipes();
-      console.log(response, 'response');
       const recipes = response;
       recipeList.update({ recipes: recipes });
       // const totalResults = response.length();
